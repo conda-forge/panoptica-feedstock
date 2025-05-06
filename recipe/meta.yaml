@@ -1,5 +1,5 @@
 {% set name = "panoptica" %}
-{% set version = "1.3.4" %}
+{% set version = "1.4.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/panoptica-{{ version }}.tar.gz
-  sha256: 0f69d35d6cea0899877a2d6c339d740f389b164c96ef1e40614aa03157467030
+  sha256: fbb813ebd5a5212239c47627ffa041e0b3a7bcf24b8c4fe8dae59d0f7f17a918
 
 build:
   noarch: python
@@ -35,6 +35,8 @@ requirements:
     - joblib >=1.3.2,<2.0.0
     - tqdm >=4.62.3
     - typer >=0.15.0
+    - pytorch >=2.1.0
+    - nibabel >=5.1.0
 
 test:
   imports:
