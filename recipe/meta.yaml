@@ -36,6 +36,7 @@ requirements:
     - tqdm >=4.62.3
     - typer >=0.15.0
     - pytorch >=2.1.0
+    - nibabel >=5.1.0
 
 test:
   imports:
