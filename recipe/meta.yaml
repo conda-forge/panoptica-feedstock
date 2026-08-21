@@ -1,5 +1,5 @@
 {% set name = "panoptica" %}
-{% set version = "2.1.6" %}
+{% set version = "2.1.7" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/panoptica-{{ version }}.tar.gz
-  sha256: b679aaf7b047eaba8b8a7767b8f3c5624499c371633e873a279d895d3ee8def8
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/panoptica-{{ version }}.tar.gz
+  sha256: fd8b34fc9e7068360d0dcacb40d7ec601b41f9047181bb55162fb9bd5e08ca3a
 
 build:
   noarch: python
